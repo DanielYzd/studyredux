@@ -6,7 +6,8 @@ import * as serviceWorker from './serviceWorker';
 // import First from './study/redux1/first'
 import store from './study/redux1/store'
 // import Second from './study/redux2/second'
-import Second2 from './study/redux3/second'
+// import Second2 from './study/redux3/second'
+import Redux4 from './study/redux4/redux4'
 import { Provider } from 'react-redux'
 
 // ReactDOM.render(
@@ -25,6 +26,6 @@ import { Provider } from 'react-redux'
 //react-redux演示
 ReactDOM.render(
     <Provider store={store}>
-    <Second2 ></Second2>
+    <Redux4 ></Redux4>
     </Provider> ,
    document.getElementById('root'))

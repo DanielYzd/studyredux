@@ -1,4 +1,6 @@
-import {createStore} from 'redux'
+import {createStore,applyMiddleware} from 'redux'
+import logger from 'redux-logger'
+import thunk from 'redux-thunk'
 
 const initState={
     name:'yzd',
@@ -39,5 +41,6 @@ const reducer = (state=initState,action)=>{
             return state
     }
 }
-const store = createStore(reducer)
+const store = createStore(reducer,applyMiddleware(thunk
+    ,logger))
 export default store
